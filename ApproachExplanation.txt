@@ -1,0 +1,22 @@
+I kept my approach simple to satisfy the requirements appropriately.
+I had split the code sections seperating html, css styling, javascript code
+and the backend code in php. I have followed the PSR-2 coding style guidelines.
+
+For the html frontend I have used only 2 divisions, one for the input file and another for the table.
+The javascript code is also kept simple to only initiate a submit request on file submit, and 
+send the request to the backend in php and display the response back to the frontend as a table.
+
+For the php code or backend, the requirements were to use OOP and so a single class was created
+to represent the transaction objects or the record contents of the bank transaction file.
+The input parameters or file contents are first type-checked and if the type of the contents
+don't match then it is considered as invalid transaction, such as if the date column consists of non-string
+data or string not in the specified format then that transaction is considered as invalid and not processed.
+
+Once the transaction types are validated, then the object is created. During object construction, the transaction code is compared
+to check if the code is valid, if not then it is recorded. Then the objects are sorted based on the date parameter using 'usort'.
+Then the contents are iterated and a html table is created as a response to display the valid and invalid transaction in the frontend.
+
+My objective was to satisfy the given requirements following the guidelines and deploy the wesbite to github for source control.
+I beleive if the code has to have more conditions and requirements that would have been derived from more meetings and discussions
+with the client. Considering the document provided and communication via mail regarding some minor issues. I consider my first draft
+for the task to be appropriate as it satisfies all the given requirements.

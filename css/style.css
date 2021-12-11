@@ -1,0 +1,76 @@
+/** HTML + Body styling **/
+html, body {
+	font-family: "Times New Roman", Times, serif;
+}
+
+/** Div and input styling **/
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding:0;
+  width: 100%;
+  height: fit-content;
+}
+
+input[type="file"] {
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  left: 8px;
+  font-size: 17px;
+  color: #b8b8b8;
+  display:none;
+}
+
+input[type="submit"] {
+  z-index: -1;
+  font-size: 17px;
+  color: #b8b8b8;
+}
+
+.button-wrap {
+  position: relative;
+  height:fit-content;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px 9px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #A9A9A9;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/** Table styling **/
+
+#transaction_table table {
+	border-spacing: 20px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#transaction_table th,td {
+	padding: 15px;
+	text-align: left;
+ }
+ 
+#transaction_table tr:nth-child(even){background-color: #f2f2f2;}
+
+#transaction_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: black;
+  color: white;
+}
+
+.credit{
+	color: green;
+}
+
+.debit{
+	color: red;
+}

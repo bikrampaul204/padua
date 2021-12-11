@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Padua Task</title>
+ 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="css/style.css" rel="stylesheet" >
+ 
+</head>
+<body>
+		<div class="container">
+			<div class="row">
+				<div class="button-wrap container">
+					<form id="csv_uploader" enctype='multipart/form-data' action='backend.php' method='post'>
+						<h3>Upload new CSV</h3>
+						<label class="button" id="file_label" for="file_csv">Select CSV to upload:</label>
+						<input size='50' id="file_csv" type='file' name='filename'><br/>
+						<input type='submit' id="submit" name='submit' value='Upload CSV'>
+					</form>
+				</div>
+				
+			</div>
+		</div><br/>
+		<div class="container">
+			<div class = "row">
+				<div id="response" style="overflow-x: auto;"></div>
+			</div>
+		</div>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/code.js"></script>
+</body>
+</html>
+
